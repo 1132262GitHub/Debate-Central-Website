@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<!--RULES PAGE IS COMPLETE-->
+
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Lexend+Deca&family=Nunito+Sans:wght@300&display=swap" rel="stylesheet"> 
+
+<!--NAV BAR-->
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="rules.html">Rules</a></li>
+    <li><a href="forum.html">Forum</a></li>
+  </ul>
+</nav>
+
+
+<!--TITLE STUFF-->
+
+</head>
+<body>
+<title>Rules | Debate Central</title>
+<div class="title">
+Rules
+</div>
+<br>
+<br>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for rules...">
+
+
+
+<!--SEARCH STUFF-->
+
+<script>
+  function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, h, i, txtValue, obj;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+
+    li = document.getElementsByTagName("h");
+    
+
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+    h = li[i];
+
+    txtValue = h.textContent || h.innerText;
+
+      console.log(input.value.length === 0)
+
+    
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      if (input.value.length === 0) {
+        document.getElementById(txtValue).style.display = "none";
+      } else {
+        document.getElementById(txtValue).style.display = "";
+        
+      }
+      
+    } else {
+      document.getElementById(txtValue).style.display = "none";
+      
+    }
+  }
+  }
+  </script>
+
+<body onload="myFunction()"></body>
+
+<!--SEARCHABLE CARDS-->
+
+<br>
+<br>
+<div class=container>
+
+<!--MANAGER REAPPROVAL-->
+
+  <div class="item" id="Manager reapproval">
+    <div class="container2">
+      <h>Manager reapproval</h>
+      <br>
+      <p>Managers must be re-approved every three months. The criteria for re-approval will be the same as the criteria...
+        <br>
+        <br>
+        <div class="readMore">
+        <a href="#managerreaproval" >Read More</a>
+        </div>
+        <br>
+      </p>
+  </div>
+
+
+
+<!--BAN VOTES-->
+
+  </div>
+  <div class="item" id="ban votes">
+    <div class="container2">
+      <h>ban votes</h>
+      <br>
+      <p>To ban a user, a vote must be held. The user that initiates the vote must create a post in the appropriate forum with the user to be banned...
+      <br>
+        <br>
+        <div class="readMore">
+          <a href="#banvotes">Read More</a>
+        </div>
+        <br>
+      </p>
+  </div>
+
+
+<!--RULE PROPOSALS-->
+
+
+  </div>
+  <div class="item" id="rule proposals">
+    <div class="container2">
+      <h>rule proposals</h>
+      <br>
+      <p>Standard rule proposals require a certain number of votes to be enacted (currently 3). These can change a variety of things, including the rules...
+      <br>
+        <br>
+        <div class="readMore">
+          <a href="#ruleproposals">Read More</a>
+        </div>
+        <br>
+      </p>
+  </div>
+  </div>
+
+<!--REPEALING RULES-->
+
+  <div class="item" id="repealing rules">
+    <div class="container2">
+      <h>repealing rules</h>
+      <br>
+      <p>Repealing a standard rule only requires the proposal of a new rule which supersedes the previous one. The number of votes needed to repeal a permanent rule is...
+
+      <br>
+        <br>
+        <div class="readMore">
+          <a href="#repealingrules">Read More</a>
+        </div>
+        <br>
+      </p>
+  </div>
+  </div>
+
+<!--VOTE TIERS-->
+
+
+
+  <div class="item" id="Vote Tiers">
+    <div class="container2">
+      <h>Vote Tiers</h>
+      <br>
+      <p>Standard Rule Proposals: 3 Votes, Tier 1. Manager Elections/Demotions: 5 Votes, Tier 2. Admin-Initiated Bans: 5 Votes, Tier 2. Rule Proposals Making Manager...
+
+      <br>
+        <br>
+        <div class="readMore">
+          <a href="#votetiers">Read More</a>
+        </div>
+        <br>
+      </p>
+  </div>
+  </div>
+
+<!--MANAGERS-->
+
+
+
+  <div class="item" id="Managers">
+    <div class="container2">
+      <h>Managers</h>
+      <br>
+      <p>Members can be promote managers with five votes.  The number of votes needed to remove a manager is equal to and fixed to the number required to promote one...
+
+      <br>
+        <br>
+        <div class="readMore">
+          <a href="#managers">Read More</a>
+        </div>
+        <br>
+      </p>
+  </div>
+  </div>
+
+<!--MANAGER ABILITIES-->
+
+
+  <div class="item" id="Manager Abilities">
+    <div class="container2">
+      <h>Manager Abilities</h>
+      <br>
+      <p> Managers can individually delay implementing a rule for up to 10 hours.
+      <br>
+        <br>
+        <div class="readMore">
+          <a href="#managerabilities">Read More</a>
+        </div>
+        <br>
+      </p>
+  </div>
+  </div>
+
+<!--OTHER RESOLUTIONS-->
+
+
+  <div class="item" id="Other Resolutions">
+    <div class="container2">
+      <h>Other Resolutions</h>
+      <br>
+      <p> (Not all of these are implemented rules, more like meta discussions about how we should act.) Debate categories are generally done through #hashtags. Votes...
+
+
+
+      <br>
+        <br>
+        <div class="readMore">
+          <a href="#otherresolutions">Read More</a>
+        </div>
+        <br>
+      </p>
+  </div>
+  </div>
+
+
+
+
+</div>
+<!--CSS GRID STUFF-->
+<style>
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5vh;
+  }
+</style>
+
+<!--RULES BUT WITH TEXT INSTEAD OF CARDS-->
+
+
+<br>
+<br>
+<a name="votetiers"></a>
+<h1>Debate Central Rules</h1>
+
+<h2>Vote tiers:</h2>
+
+<br>
+<table id="customers">
+  <thead>
+  <tr>
+    <th>Name </th>
+    <th>Votes</th>
+    <th>Tier</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Standard Rule Proposals</td>
+    <td>3</td>
+    <td>1</td>
+  </tr>
+  <tr class="active-row">
+    <td>Manager Elections/Demotions</td>
+    <td>5</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Manager-Initiated Bans</td>
+    <td>5</td>
+    <td>2</td>
+  </tr>
+  <tr class="active-row">
+    <td>Rule Proposals Making Manager Promotions Easier</td>
+    <td>5</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>User-Initiated Bans</td>
+    <td>7</td>
+    <td>3</td>
+  </tr>
+  </td>
+</tbody>
+</table>
+
+<br>
+<br>
+
+<p>The proposer of a rule does not count as a voter.
+<br>
+<br>
+  Only verified users can vote.
+<br>
+<br>
+(Terminology note: All instances of requirements/criteria being tied or fixed to others are bolded, so if one changes we know what else goes with it.)
+</p> 
+
+<!--If X is fixed to Y, then a rule changing the requirements for Y automatically changes X; for instance, if the requirement for promotion changes to twenty votes, then the number of votes required for removal will automatically change with it.-->
+
+
+<br>
+<a name="ruleproposals">
+<h2>Rule proposals</h2>
+
+<table id="normal">
+  <ul>
+    <li><p>Standard rule proposals require 3 votes to be enacted. These can change a variety of things, including the rules themselves.</p></li>
+    <li><p>Permanent rule proposals are approved in a tally vote which lasts 36 hours. Ties prevent it passing. Permanent rules take precedence over standard rules.</p></li>
+    <li><p>Certain rule proposals require different numbers of votes, see table above.</p></li>
+  </ul>
+</table>
+</a>
+
+<a name="repealingrules"></a>
+<h3>Repealing rules</h3>
+
+<table id="normal">
+  <ul>
+    <li><p>Repealing a standard rule only requires the proposal of a new rule which supersedes the previous one.</p></li>
+    <li><p>The number of votes needed to repeal a permanent rule is undetermined (as of 10/26/20).</p></li>
+  </ul>
+</table>
+
+<br>
+<a name="managers"></a>
+<h2>Managers</h2>
+
+<table id="normal">
+  <ul>
+    <li><p>Members can be made managers with five votes.</p></li>
+    <li><p>The number of votes needed to remove a manager is equal to and fixed to the number required to promote one.</p></li>
+    <li><p>Any rule making it easier to become a manager must meet the same criteria (its requirements are fixed to the same criteria) as are then needed to become a manager.</p></li>
+  </ul>
+</table>
+
+<a name="managerabilities"></a>
+<h3>Manager Abilities</h3>
+
+<table id="normal">
+  <ul>
+    <li><p>Managers can individually delay implementing a rule for up to 10 hours.</p></li>
+  </ul>
+</table>
+<a name="managerreaproval"></a>
+<h3>Manager Reapproval</h3>
+
+<table id="normal">
+  <ul>
+    <li><p>Managers must be re-approved every three months. The criteria for re-approval will be the same as (are fixed to) the criteria for initial approval. The re-approval period will last for one week (168 hours) from the time the vote for re-approval is posted, after which all managers who don't meet the criteria for re-approval will lose the Manager badge and capabilities. This will also apply to inactive managers. Banned managers lose their Manager badge when they are banned.</p></li>
+    
+    <p>This will be carried out most likely through a thread posted in the Manager Elections category by an admin or someone else. This thread should be labeled with "manager re-approval" and the date; it should be categorized as a discussion. Each individual manager can post a comment and some variation on "I'd like re-approval", or the admins or others can post one comment for each manager listing their name. A heart/like on a top-level comment is considered a vote to re-approve that manager, and, if the number of votes noted above is reached, that manager is re-approved.
+    </p>
+    <p>Re-approval happens on the first day of the third, sixth, ninth, and twelfth months (March, June, September, December).
+    </p> 
+  </ul>
+</table>
+</a>
+
+<a name="banvotes"></a>
+<h2>Bans</h2>
+
+<p>To ban a user, a vote must be held. The user that initiates the vote must create a post in the appropriate forum with the user to be banned and the reasons for the ban.</p>
+
+<h3>Manager-Initiated</h3>
+
+<p>In order to implement the ban, a number of votes is required; this number is fixed to the same number of votes as a manager election, currently 5. (Not counting the manager who proposes it.)
+</p>
+
+
+<h3>User-Initiated</h3>
+
+<p> A regular DC user can also start a ban petition; this is fixed to two votes more than an admin-initiated ban, currently 7. (Not counting the user who proposes it.)
+</p>
+<br>
+<a name="otherresolutions"></a>
+
+<h2>Other Resolutions</h2>
+
+<p>(Not all of these are implemented rules, more like meta discussions about how we should act.)
+</p>
+
+<p>Debate categories are generally done through #hashtags.</p>
+<p>Votes for rule proposals are done through comments saying "support", "I agree", "I vote for this", or something of the like. Hearts/likes do not count as votes (except when stated otherwise, such as for manager re-approval).</p>
+<p>Inappropriate comments/topics should have a warning like "//nsfw" at the start.</p>
+<p>There are two pathways to joining DC (besides having been on DC Scratch): Join Scratch and earn the Scratcher status or know a DC Scratch member IRL. When  a new member requests verification, they should either name who they know IRL or link your Scratch account. Then, the person they know IRL should verify it or someone should check the Scratch account.</p>
+
+
+<!--I CODE IN HTML-->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
